@@ -1,0 +1,175 @@
+@font-face {
+  font-family: futuraMedium;
+  src: url(../fonts/Futura/FuturaStd-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: futuraHeavy;
+  src: url(../fonts/Futura/FuturaStd-Bold.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: #ffdf20;
+  font-family: futuraMedium, "Futura";
+  font-size: 1rem;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/cow.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* MAIN TITLES */
+
+.mainTitles {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  text-align: right;
+  font-family: futuraHeavy;
+  font-size: 14rem;
+  /*color: #ff3ac8;*/
+  line-height: 15rem;
+  color: #653ac8;
+}
+
+.mainTitles span {
+  display: block;
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+.blue {
+  color: #1cafdc;
+}
+
+.pink {
+  color: #ff3ac8;
+}
+
+section {
+  min-width: 55rem;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-gap: 1rem;
+  margin: 0rem 2rem;
+}
+
+.gotMilkQCell {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  font-size: 4rem;
+  font-family: futuraHeavy;
+  color: #653ac8;
+  margin: auto;
+}
+
+.actionCell {
+  margin-top: 8vh;
+  margin-bottom: 7vh;
+  margin: 2rem;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-family: futuraHeavy;
+}
+
+.gotMilkQCell h1 {
+  font-size: 36rem;
+  line-height: 36rem;
+  text-align: center;
+  margin: 0;
+  color: transparent;
+  -webkit-text-stroke: 1rem #ff3ac8;
+}
+
+.wantNut h1 {
+  color: #653ac8;
+  text-align: left;
+  font-size: 8rem;
+  line-height: 8rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.actionText h1 {
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 3rem;
+  color: #ff3ac8;
+}
+
+.actionText h1 span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 0.5rem #653ac8;
+  font-size: 12vw;
+}
+
+.gotMilkText h2 {
+  font-size: 14rem;
+  line-height: 14rem;
+  color: transparent;
+  -webkit-text-stroke: 0.5rem white;
+  margin: 0;
+}
+
+.gotMilkText h3 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 2rem 0;
+  text-align: right;
+}
+
+.info p {
+  font-size: 2.25rem;
+  color: #ff3ac8;
+  line-height: 3.5rem;
+  /* text-align: justify; */
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.info a {
+  text-decoration: none;
+  color: #1cafdc;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#sexyAlmond {
+  width: 70%;
+  min-width: 50rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  * {
+    font-size: 12px;
+  }
+}
